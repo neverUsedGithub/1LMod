@@ -25,10 +25,11 @@ jobs:
           path: gradle.properties
           properties: minecraft_version mod_version
 
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
       - name: Build jar
-        run:
-          chmod +x ./gradlew
-          ./gradlew build
+        run: ./gradlew build
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
