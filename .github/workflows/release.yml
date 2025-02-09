@@ -1,8 +1,9 @@
 name: Release
 
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   release:
@@ -31,8 +32,23 @@ jobs:
       - name: Build jar
         run: ./gradlew build
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: ${{ steps.properties.outputs.minecraft_version }}-OneLMod-${{ steps.properties.outputs.mod_version }}.jar
-          path: build/libs/OneLMod-${{ steps.properties.outputs.mod_version }}.jar
+          tag_name: v${{ steps.properties.outputs.mod_version }}
+          release_name: Release ${{ steps.properties.outputs.mod_version }}
+          draft: false
+          prerelease: true
+
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: build/libs/OneLMod-${{ steps.properties.outputs.mod_version }}.jar
+          asset_name: ${{ steps.properties.outputs.minecraft_version }}-OneLMod-${{ steps.properties.outputs.mod_version }}.jar
+          asset_content_type: application/java-archive
