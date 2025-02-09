@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "onelmod",
+  "version": "${version}",
+  "name": "1L Mod",
+  "description": "A DiamondFire utility mod.",
+  "authors": [
+    "1__L_1"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/onelmod/onelmod.png",
+  "mixins": [
+    "onelmod.mixins.json",
+    "onelmod.sodium.mixins.json"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "onelone.onelmod.client.ClientInitializer"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "fabric-language-kotlin": ">=1.10.8+kotlin.1.9.0",
+    "yet_another_config_lib_v3": ">=3.6.1"
+  }
+}

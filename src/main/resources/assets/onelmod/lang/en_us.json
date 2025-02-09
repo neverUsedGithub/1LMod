@@ -1,0 +1,48 @@
+{
+  "onelmod.config.title": "Config",
+
+  "onelmod.config.category.general": "General",
+  "onelmod.config.category.rendering": "Rendering",
+
+  "onelmod.config.group.misc": "Miscellaneous",
+  "onelmod.config.group.misc.description": "Miscellaneous settings.",
+
+  "onelmod.config.option.plotLocalSettings": "Local Plot Settings",
+  "onelmod.config.option.plotLocalSettings.description": "Makes it so settings adjusted while playing a plot are only applied within that plot.",
+
+  "onelmod.config.option.noNetworkProtocol": "Anti Network Protocol Error",
+  "onelmod.config.option.noNetworkProtocol.description": "Stops network protocol errors from occurring.",
+
+  "onelmod.config.group.code_chest": "Code Chest Behavior",
+  "onelmod.config.group.code_chest.description": "Settings influencing the behavior of code chests.",
+
+  "onelmod.config.group.performance": "Performance",
+  "onelmod.config.group.performance.description": "Settings that can improve the game's performance.",
+
+  "onelmod.config.option.middleClickAction": "Middle Click Pick",
+  "onelmod.config.option.middleClickAction.description": "Makes middle mouse click give you a single one of the clicked item instead of copying a stack.",
+
+  "onelmod.config.option.codeHider": "Code Hider",
+  "onelmod.config.option.codeHider.description": "Hides the code of the current plot while in play mode.",
+
+  "onelmod.config.option.worldHider": "World Hider",
+  "onelmod.config.option.worldHider.description": "Makes Code Hider also hide everything outside of the plot.",
+
+  "onelmod.config.option.noUnverifiedToast": "No Unverified Chat Messages Toast",
+  "onelmod.config.option.noUnverifiedToast.description": "Disables the 'Chat messages cannot be verified.' toast.",
+
+  "onelmod.config.option.modeChangeToasts": "Mode Change Toasts",
+  "onelmod.config.option.modeChangeToasts.description": "Display a toast when changing modes.",
+
+  "onelmod.config.option.directMessageNotifications": "Direct Message Notifications",
+  "onelmod.config.option.directMessageNotifications.description": "Send OS tray notifications when getting direct messages if the window is not focused.",
+
+  "onelmod.toast.network_protocol_error": "A network protocol would have occurred.",
+
+  "onelmod.mode.dev": "Dev",
+  "onelmod.mode.build": "Build",
+  "onelmod.mode.play": "Play",
+  "onelmod.mode.spawn": "Spawn",
+
+  "onelmod.notification.direct_message": "%1$s to You"
+}

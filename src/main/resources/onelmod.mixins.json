@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "onelone.onelmod.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": [
+    "BlockEntityRenderDispatcherMixin",
+    "ClientCommonNetworkHandlerMixin",
+    "ClientConnectionMixin",
+    "FluidRendererMixin",
+    "ParticleAccessor",
+    "ParticleManagerMixin",
+    "ScreenHandlerMixin",
+    "TerrainRendererContextMixin",
+    "ToastManagerMixin"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
