@@ -37,7 +37,7 @@
   "onelmod.config.option.directMessageNotifications": "Direct Message Notifications",
   "onelmod.config.option.directMessageNotifications.description": "Send OS tray notifications when getting direct messages if the window is not focused.",
 
-  "onelmod.toast.network_protocol_error": "A network protocol would have occurred.",
+  "onelmod.toast.network_protocol_error": "A network protocol error would've occurred.",
 
   "onelmod.mode.dev": "Dev",
   "onelmod.mode.build": "Build",
