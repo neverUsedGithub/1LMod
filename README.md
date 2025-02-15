@@ -25,6 +25,9 @@ Displays a toast when switching modes (play, build, dev).
 Makes network protocol errors display a toast instead of disconnecting you
 from the server.
 
+### Direct message notifications
+Sends a tray notification when Minecraft is unfocused, and you receive a direct message.
+
 # Dev features
 ### Expression command
 Makes %math, %index and %var expressions easier to write.
