@@ -14,9 +14,6 @@ A 1.21.1 fabric utility mod for the server DiamondFire.
 | [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) | \>=1.10.8 |
 
 # Miscellaneous features
-
----
-
 ### No unverified messages toast
 Disables the "Messages sent on this server may be modified..." toast that shows
 up when joining diamondfire.
@@ -29,9 +26,6 @@ Makes network protocol errors display a toast instead of disconnecting you
 from the server.
 
 # Dev features
-
----
-
 ### Expression command
 Makes %math, %index and %var expressions easier to write.
 
