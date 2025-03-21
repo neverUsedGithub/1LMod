@@ -44,5 +44,7 @@
   "onelmod.mode.play": "Play",
   "onelmod.mode.spawn": "Spawn",
 
-  "onelmod.notification.direct_message": "%1$s to You"
+  "onelmod.notification.direct_message": "%1$s to You",
+
+  "onelmod.command.smallcaps.copy": "Click to copy."
 }
