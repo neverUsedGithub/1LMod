@@ -2,10 +2,11 @@
 A 1.21.1 fabric utility mod for the server DiamondFire.
 
 # Commands
-| Command              | Description                               |
-|----------------------|-------------------------------------------|
-| `/onelmod` `/onel`   | opens the config menu                     |
-| `/onel expr` `/expr` | creates a number value from an expression |
+| Command                        | Description                               |
+|--------------------------------|-------------------------------------------|
+| `/onelmod` `/onel`             | opens the config menu                     |
+| `/onel expr` `/expr`           | creates a number value from an expression |
+| `/onel smallcaps` `/smallcaps` | convert text to small capital letters     |
 
 # Dependencies
 | Dependency                                                                | Version   |
