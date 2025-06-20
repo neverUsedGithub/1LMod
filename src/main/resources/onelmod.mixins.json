@@ -5,14 +5,10 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "client": [
-    "BlockEntityRenderDispatcherMixin",
     "ClientCommonNetworkHandlerMixin",
     "ClientConnectionMixin",
-    "FluidRendererMixin",
     "ParticleAccessor",
-    "ParticleManagerMixin",
     "ScreenHandlerMixin",
-    "TerrainRendererContextMixin",
     "ToastManagerMixin"
   ],
   "server": [],
