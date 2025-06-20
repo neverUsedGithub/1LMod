@@ -33,7 +33,7 @@ class Lexer(private val source: String) {
             val start = pos
             var curr = source[pos++].toString()
 
-            while (!isEOF() && constTokens.keys.any { token -> token.startsWith(source[pos]) })
+            while (!isEOF() && constTokens.keys.any { token -> token.startsWith(curr + source[pos]) })
                 curr += source[pos++];
 
             return Token(constTokens[curr]!!, curr, Token.Span(start, start + curr.length))
