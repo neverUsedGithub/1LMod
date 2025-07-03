@@ -10,6 +10,7 @@ import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource
 import net.minecraft.client.MinecraftClient
 import net.minecraft.text.ClickEvent
 import net.minecraft.text.HoverEvent
+import net.minecraft.text.MutableText
 import net.minecraft.text.Style
 import net.minecraft.text.Text
 import net.minecraft.util.Formatting
@@ -65,10 +66,10 @@ object OneLCommand {
         }
 
         OneLClient.logChat(
-            Text.of(mapped)
-                .getWithStyle(Style.EMPTY
-                    .withHoverEvent(HoverEvent(HoverEvent.Action.SHOW_TEXT, Text.translatable("onelmod.command.smallcaps.copy")))
-                    .withClickEvent(ClickEvent(ClickEvent.Action.COPY_TO_CLIPBOARD, mapped)))[0]
+            MutableText.of(Text.of(mapped).content)
+                .setStyle(Style.EMPTY
+                    .withHoverEvent(HoverEvent.ShowText(Text.translatable("onelmod.command.smallcaps.copy")))
+                    .withClickEvent(ClickEvent.CopyToClipboard(mapped)))
         )
 
         Command.SINGLE_SUCCESS

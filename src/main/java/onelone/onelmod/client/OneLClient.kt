@@ -80,11 +80,11 @@ object OneLClient {
     }
 
     fun logChat(str: String) {
-        mc.player!!.sendMessage(formatText(str))
+        mc.player!!.sendMessage(formatText(str), false)
     }
 
     fun logChat(text: Text) {
-        mc.player!!.sendMessage(formatText(text))
+        mc.player!!.sendMessage(formatText(text), false)
     }
 
     fun onDiamondFire(): Boolean {
