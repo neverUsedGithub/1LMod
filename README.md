@@ -1,5 +1,5 @@
 # 1L Mod
-A 1.21.1 fabric utility mod for the server DiamondFire.
+A 1.21.5 fabric utility mod for the server DiamondFire.
 
 # Commands
 | Command                        | Description                               |
@@ -11,7 +11,7 @@ A 1.21.1 fabric utility mod for the server DiamondFire.
 # Dependencies
 | Dependency                                                                | Version   |
 |---------------------------------------------------------------------------|-----------|
-| [Yet Another Config Lib](https://modrinth.com/mod/yacl)                   | \>=3.6.1  |
+| [Yet Another Config Lib](https://modrinth.com/mod/yacl)                   | \>=3.7.1  |
 | [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) | \>=1.10.8 |
 
 # Miscellaneous features
