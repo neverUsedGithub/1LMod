@@ -25,6 +25,6 @@
     "fabric": "*",
     "minecraft": "${minecraft_version}",
     "fabric-language-kotlin": ">=1.10.8+kotlin.1.9.0",
-    "yet_another_config_lib_v3": ">=3.6.1"
+    "yet_another_config_lib_v3": ">=3.7.1"
   }
 }
