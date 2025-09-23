@@ -2,6 +2,7 @@ package onelone.onelmod.client.toast
 
 import net.minecraft.client.MinecraftClient
 import net.minecraft.client.font.TextRenderer
+import net.minecraft.client.gl.RenderPipelines
 import net.minecraft.client.gui.DrawContext
 import net.minecraft.client.render.RenderLayer
 import net.minecraft.client.toast.AdvancementToast
@@ -36,7 +37,7 @@ class OneLToast(private val icon: ItemStack, private val title: Text, private va
     }
 
     override fun draw(context: DrawContext, textRenderer: TextRenderer, startTime: Long) {
-        context.drawGuiTexture(RenderLayer::getGuiTextured, texture, 0, 0, this.width, this.height)
+        context.drawGuiTexture(RenderPipelines.GUI_TEXTURED, texture, 0, 0, this.width, this.height)
 
         val textLines = textRenderer.wrapLines(text, 125)
         val toastColor = 0xffff00
