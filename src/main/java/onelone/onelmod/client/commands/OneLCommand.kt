@@ -23,7 +23,7 @@ object OneLCommand {
     private const val NORMAL_CHARACTERS = "abcdefghijklmnopqrstuvwxyz"
     private const val SMALLCAPS_CHARACTERS = "ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀsᴛᴜᴠᴡxʏᴢ"
 
-    fun register(dispatcher: CommandDispatcher<FabricClientCommandSource?>) {
+    fun register(dispatcher: CommandDispatcher<FabricClientCommandSource>) {
         val expressionCommand = ClientCommandManager.literal("expr")
             .then(ClientCommandManager.argument("expression", StringArgumentType.greedyString())
                 .executes(executeExpression)

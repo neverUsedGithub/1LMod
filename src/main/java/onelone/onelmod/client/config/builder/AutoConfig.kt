@@ -14,7 +14,6 @@ import net.minecraft.client.gui.screen.Screen
 import net.minecraft.text.Text
 import net.minecraft.util.Identifier
 import net.minecraft.util.Language
-import onelone.onelmod.client.OneLClient
 import onelone.onelmod.client.features.Feature
 import java.awt.Color
 import java.io.File
@@ -134,8 +133,8 @@ open class AutoConfig<T : Any>(
                 ann.imageHeight
             )
             if (ann.webpImage.isNotEmpty()) desc.webpImage(Identifier.of(namespace, ann.webpImage))
-            if (ann.gifImage.isNotEmpty()) desc.gifImage(Identifier.of(namespace, ann.gifImage))
 
+            @Suppress("UNCHECKED_CAST")
             val option = Option.createBuilder<Any>()
                 .name(Text.translatable("$namespace.config.option.${prop.name}"))
                 .binding(Binding.generic(
@@ -203,7 +202,6 @@ open class AutoConfig<T : Any>(
                         )
 
                         if (ann.webpImage.isNotEmpty()) desc.webpImage(Identifier.of(namespace, ann.webpImage))
-                        if (ann.gifImage.isNotEmpty()) desc.gifImage(Identifier.of(namespace, ann.gifImage))
                     }
 
                     categoryBuilder.group(groupBuilder.description(desc.build())

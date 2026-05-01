@@ -6,7 +6,6 @@ annotation class ConfigField(
     val group: String = "",
 
     val image: String = "",
-    val gifImage: String = "",
     val webpImage: String = "",
 
     val imageWidth: Int = 0,

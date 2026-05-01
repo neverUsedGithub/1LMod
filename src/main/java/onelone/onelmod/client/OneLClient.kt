@@ -3,14 +3,12 @@ package onelone.onelmod.client
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
-import net.fabricmc.fabric.api.client.message.v1.ClientReceiveMessageEvents
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents
 import net.fabricmc.fabric.api.networking.v1.PacketSender
 import net.minecraft.client.MinecraftClient
 import net.minecraft.client.network.ClientPlayNetworkHandler
 import net.minecraft.item.ItemStack
 import net.minecraft.text.Text
-import net.minecraft.util.Formatting
 import onelone.onelmod.client.commands.OneLCommand
 import onelone.onelmod.client.config.Config
 import onelone.onelmod.client.features.global.TrayNotifications
@@ -19,9 +17,6 @@ import onelone.onelmod.client.mode.ModeEvents
 import onelone.onelmod.client.toast.OneLToast.Companion.show
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
-import java.awt.SystemTray
-import java.awt.Toolkit
-import java.awt.TrayIcon
 
 object OneLClient {
     val mc: MinecraftClient = MinecraftClient.getInstance()

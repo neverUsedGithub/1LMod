@@ -1,7 +1,7 @@
 plugins {
-    id 'fabric-loom' version '1.11-SNAPSHOT'
+    id 'net.fabricmc.fabric-loom-remap' version '1.16-SNAPSHOT'
     id 'maven-publish'
-    id 'org.jetbrains.kotlin.jvm'
+    id 'org.jetbrains.kotlin.jvm' version '2.3.21'
 }
 
 version = project.mod_version
@@ -39,7 +39,7 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // Kotlin
-    modImplementation "net.fabricmc:fabric-language-kotlin:1.10.8+kotlin.1.9.0"
+    modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_language_kotlin_version}"
 
     // Mod dependencies
     modImplementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
@@ -86,7 +86,7 @@ java {
 
 jar {
     from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}"}
+        rename { "${it}_${project.archives_base_name}"}
     }
 }
 
