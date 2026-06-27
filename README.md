@@ -1,5 +1,5 @@
 # 1L Mod
-A 1.21.5 fabric utility mod for the server DiamondFire.
+A 1.21.11 fabric utility mod for the server DiamondFire.
 
 # Commands
 | Command                        | Description                               |
