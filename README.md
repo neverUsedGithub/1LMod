@@ -9,10 +9,10 @@ A 1.21.11 fabric utility mod for the server DiamondFire.
 | `/onel smallcaps` `/smallcaps` | convert text to small capital letters     |
 
 # Dependencies
-| Dependency                                                                | Version   |
-|---------------------------------------------------------------------------|-----------|
-| [Yet Another Config Lib](https://modrinth.com/mod/yacl)                   | \>=3.7.1  |
-| [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) | \>=1.10.8 |
+| Dependency                                                                | Version    |
+|---------------------------------------------------------------------------|------------|
+| [Yet Another Config Lib](https://modrinth.com/mod/yacl)                   | \>=3.8.2   |
+| [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) | \>=1.13.11 |
 
 # Miscellaneous features
 ### No unverified messages toast
